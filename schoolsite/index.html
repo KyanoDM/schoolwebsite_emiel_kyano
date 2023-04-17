@@ -3,10 +3,35 @@
   <head>
     <title>Studierichtingen</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css"
+      integrity="sha512-DbP1b6q56Ud5q0L+lvw9COyyH/+pN1lVmySvun4UsH8vmfdIHou+PAHfMnGXf6Fvd9rYLjSojeuPhQz2euU1cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Studierichtingen</h1>
-    <div id="studierichtingen"></div>
-    <script type="text/javascript" src="app.js"></script>
+    <div id="fullpage">
+      <div class="section">
+        <div class="slide">
+          <h1>Studierichtingen</h1>
+          <div id="studierichtingen"></div>
+        </div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+        <div class="slide">Slide 4</div>
+      </div>
+      <div class="section">Some section</div>
+      <div class="section">Some section</div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"
+      integrity="sha512-GS3CSFQ4aj+0fL2a0wV1ouvpdbTZ3eEUriXTpXt50dc0CkO1fgyWuLoPA5NWy1PAWmcaZNneM+OAThgCqPnX+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
   </body>
 </html>

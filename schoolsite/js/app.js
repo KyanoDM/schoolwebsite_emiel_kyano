@@ -14,3 +14,4 @@ fetch("studierichtingen.json")
 			studierichtingenContainer.appendChild(studierichtingElement);
 		});
 	});
+    

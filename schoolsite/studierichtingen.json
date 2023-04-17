@@ -1,20 +1,26 @@
 [
 	{
-		"id": "informatica",
-		"naam": "Informatica",
-		"beschrijving": "De studie informatica richt zich op het ontwikkelen van software en andere technologische oplossingen.",
-		"afbeelding": "informatica.png"
+		"id": "1la",
+		"naam": "Latijn",
+		"beschrijving": "Deze module bestudeert de interessante aspecten van de klassieke taal Latijn en de bijhorende rijke geschiedenis en cultuur.",
+		"afbeelding": "/img/latijn.png"
 	},
 	{
-		"id": "biologie",
-		"naam": "Biologie",
-		"beschrijving": "De studie biologie richt zich op het bestuderen van levende organismen en hun interactie met de omgeving.",
-		"afbeelding": "biologie.png"
+		"id": "1stem",
+		"naam": "STEM",
+		"beschrijving": "In deze module komen zowel wetenschappen, technologie, wiskunde als informatica aan te pas. Leuke projecten worden ontdekkend uitgewerkt.",
+		"afbeelding": "stem.png"
 	},
 	{
-		"id": "economie",
-		"naam": "Economie",
-		"beschrijving": "De studie economie richt zich op het bestuderen van vraag en aanbod en de financiële wereld.",
-		"afbeelding": "economie.png"
+		"id": "1sport",
+		"naam": "Sport",
+		"beschrijving": "Deze module biedt een rijk aanbod aan beweging. Algemene lichaamscoördinatie en -beheersing komen hier aan bod.",
+		"afbeelding": "sport.png"
+	},
+	{
+		"id": "1taal",
+		"naam": "Taal",
+		"beschrijving": "In deze module spreken de leerlingen op een creatieve manier hun vaardigheden in het Engels of Frans aan.",
+		"afbeelding": "taal.png"
 	}
 ]
