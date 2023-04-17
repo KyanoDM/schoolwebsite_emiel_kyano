@@ -1,0 +1,20 @@
+[
+	{
+		"id": "informatica",
+		"naam": "Informatica",
+		"beschrijving": "De studie informatica richt zich op het ontwikkelen van software en andere technologische oplossingen.",
+		"afbeelding": "informatica.png"
+	},
+	{
+		"id": "biologie",
+		"naam": "Biologie",
+		"beschrijving": "De studie biologie richt zich op het bestuderen van levende organismen en hun interactie met de omgeving.",
+		"afbeelding": "biologie.png"
+	},
+	{
+		"id": "economie",
+		"naam": "Economie",
+		"beschrijving": "De studie economie richt zich op het bestuderen van vraag en aanbod en de financiële wereld.",
+		"afbeelding": "economie.png"
+	}
+]

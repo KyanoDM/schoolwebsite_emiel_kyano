@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#studierichtingen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.studierichting {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.studierichting h2 {
+  margin-top: 0;
+}
+
+.studierichting p {
+  margin-top: 20px;
+}
+
+.studierichting img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
