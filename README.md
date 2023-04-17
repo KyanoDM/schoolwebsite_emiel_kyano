@@ -55,8 +55,7 @@ Wat we zoal door dit project hebben bijgeleerd:
 - link 1
 
 **Bronvermelding**
-- link 2
-- link 3
+- https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
 
 ## Auteurs
 - Emiel De Waele
