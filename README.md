@@ -19,10 +19,11 @@ De doelstelling van dit project is het maken van een schoolwebsite waarbij de us
 
 ### Taakverdeling
 
-Emiel
+**Emiel**
   - vb 1
   - vb 2
-Kyano
+
+**Kyano**
   - vb 1
   - vb 2
 
