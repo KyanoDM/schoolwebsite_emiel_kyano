@@ -70,6 +70,8 @@ Wat we zoal door dit project hebben bijgeleerd:
 
 ## Auteurs
 - Emiel De Waele
+  - HTML en CSS
   - Website - [Emiel De Waele](emieledw.tk)
 - Kyano De Maertelaere
+  -JSON en JavaScript
   - Website - [Kyano De Maertelaere](kyanodm.be)
