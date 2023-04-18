@@ -2,6 +2,7 @@
 
 - [Overview](#overview)
   - [Doelstellingen](#doelstellingen)
+  - [Taakverdeling](#taakverdeling)
   - [Screenshots](#screenshots)
 - [Onze ervaring](#onze-ervaring)
   - [Tools](#tools)
@@ -15,6 +16,15 @@
 ### Doelstellingen
 
 De doelstelling van dit project is het maken van een schoolwebsite waarbij de user aan de hand van interactive prompts de gepaste studierichting voor hun kan vinden tussen talloze andere richtingen.
+
+### Taakverdeling
+
+Emiel
+  - vb 1
+  - vb 2
+Kyano
+  - vb 1
+  - vb 2
 
 ### Screenshots
 
