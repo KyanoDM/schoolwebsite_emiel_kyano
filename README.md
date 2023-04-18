@@ -20,10 +20,12 @@ De doelstelling van dit project is het maken van een schoolwebsite waarbij de us
 ### Taakverdeling
 
 **Emiel**
+
   -HTML 
   -CSS
 
 **Kyano**
+
   -JSON  
   -JavaScript
 
