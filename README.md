@@ -20,12 +20,12 @@ De doelstelling van dit project is het maken van een schoolwebsite waarbij de us
 ### Taakverdeling
 
 **Emiel**
-  - vb 1
-  - vb 2
+  -HTML 
+  -CSS
 
 **Kyano**
-  - vb 1
-  - vb 2
+  -JSON  
+  -JavaScript
 
 ### Screenshots
 
@@ -70,8 +70,6 @@ Wat we zoal door dit project hebben bijgeleerd:
 
 ## Auteurs
 - Emiel De Waele
-  - HTML en CSS
   - Website - [Emiel De Waele](emieledw.tk)
 - Kyano De Maertelaere
-  -JSON en JavaScript
   - Website - [Kyano De Maertelaere](kyanodm.be)
