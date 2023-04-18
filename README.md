@@ -21,13 +21,13 @@ De doelstelling van dit project is het maken van een schoolwebsite waarbij de us
 
 **Emiel**
 
-  -HTML 
-  -CSS
+  - HTML 
+  - CSS
 
 **Kyano**
 
-  -JSON  
-  -JavaScript
+  - JSON  
+  - JavaScript
 
 ### Screenshots
 
