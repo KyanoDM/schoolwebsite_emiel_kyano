@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiekeuze</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <script>
+      // Get the JSON data
+		fetch('data.json')
+		  .then(response => response.json())
+		  .then(data => {
+		  	// Get the tweedegraad and derdegraad arrays from the JSON data
+		    const tweedegraad = data.tweedegraad;
+		    const derdegraad = data.derdegraad;
+
+		    // Output the "naam" values of each object in the tweedegraad array
+		    tweedegraad.forEach(obj => {
+		      const naamDiv = document.getElementById('tweedegraad');
+		      const naamElement = document.createElement('p');
+		      naamElement.textContent = obj.naam;
+		      naamDiv.appendChild(naamElement);
+		    });
+
+		    // Output the "naam" values of each object in the derdegraad array
+		    derdegraad.forEach(obj => {
+		      const naamDiv = document.getElementById('derdegraad');
+		      const naamElement = document.createElement('p');
+		      naamElement.textContent = obj.naam;
+		      naamDiv.appendChild(naamElement);
+		    });
+		  });
+    </script>
+    <div class="white"></div>
+    <div class="row justify-content-around">
+        <div class="col-4 cl1" id="tweedegraad"> <h1>Tweede Graad</h1></div>
+        <div class="col-4 cl2" id="derdegraad"><h1>Derde Graad</h1></div>
+    </div>
+</body>
+</html>
