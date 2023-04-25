@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .row {
+            clear: both;
+            margin-bottom: 20px;
+        }
+
+        .left-column {
+            width: 50%;
+            float: left;
+            cursor: pointer;
+        }
+
+        .right-column {
+            width: 50%;
+            float: left;
+        }
+
+        .selected {
+            background-color: yellow;
+        }
+
+        .highlight {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="left-column" id="left-col-1">kzeuher</div>
+          <div class="right-column" id="right-col-1">placeholder</div>
+        </div>
+        <div class="row">
+          <div class="left-column" id="left-col-2"></div>
+          <div class="right-column" id="right-col-2"></div>
+        </div>
+        <div class="row">
+          <div class="left-column" id="left-col-3"></div>
+          <div class="right-column" id="right-col-3"></div>
+        </div>
+        <div class="row">
+          <div class="left-column" id="left-col-4"></div>
+          <div class="right-column" id="right-col-4"></div>
+        </div>
+        <div class="row">
+          <div class="left-column" id="left-col-5"></div>
+          <div class="right-column" id="right-col-5"></div>
+        </div>
+        <div class="row">
+          <div class="left-column" id="left-col-6"></div>
+          <div class="right-column" id="right-col-6"></div>
+        </div>
+        <div class="row">
+          <div class="left-column" id="left-col-7"></div>
+          <div class="right-column" id="right-col-7"></div>
+        </div>
+        <div class="row">
+          <div class="left-column" id="left-col-8"></div>
+          <div class="right-column" id="right-col-8"></div>
+        </div>
+        <div class="row">
+          <div class="left-column" id="left-col-9"></div>
+          <div class="right-column" id="right-col-9"></div>
+        </div>
+        <div class="row">
+          <div class="left-column" id="left-col-10"></div>
+          <div class="right-column" id="right-col-10"></div>
+        </div>
+      </div>
+
+    <script>
+        // fetch the JSON file
+fetch('links.json')
+  .then(response => response.json())
+  .then(data => {
+    const links = data.links;
+
+    // loop through the links array
+    for (let i = 0; i < links.length; i++) {
+      const leftCol = document.createElement('div');
+      const rightCol = document.createElement('div');
+
+      // set the left column's name and ID from the JSON file
+      leftCol.textContent = links[i].left.name;
+      leftCol.id = links[i].left.id;
+      leftCol.classList.add('left-col');
+
+      // set the right column's name and
+        // ID from the JSON file
+  rightCol.textContent = links[i].right.name;
+  rightCol.id = links[i].right.id;
+  rightCol.classList.add('right-col');
+
+  // add a data attribute to the left column containing the ID of the linked right column
+  leftCol.dataset.linkedRightColId = links[i].right.id;
+
+  // add event listeners for hover and mouseout
+  leftCol.addEventListener('mouseover', () => {
+    const linkedRightColId = leftCol.dataset.linkedRightColId;
+    const linkedRightCol = document.getElementById(linkedRightColId);
+    linkedRightCol.classList.add('highlight');
+  });
+
+  leftCol.addEventListener('mouseout', () => {
+    const linkedRightColId = leftCol.dataset.linkedRightColId;
+    const linkedRightCol = document.getElementById(linkedRightColId);
+    linkedRightCol.classList.remove('highlight');
+  });
+
+  // append the columns to the container
+  const container = document.getElementById('container');
+  container.appendChild(leftCol);
+  container.appendChild(rightCol);
+}
+})
+.catch(error => {
+console.error('Error fetching links:', error);
+})
+    </script>
+</body>
+
+</html>

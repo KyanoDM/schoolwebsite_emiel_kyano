@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Studiekeuze</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+	<script>
+		// Get the JSON data
+		fetch('data.json')
+			.then(response => response.json())
+			.then(data => {
+				// Get the tweedegraad and derdegraad arrays from the JSON data
+				const tweedegraad = data.tweedegraad;
+				const derdegraad = data.derdegraad;
+
+				// Output the "naam" values of each object in the tweedegraad array
+				tweedegraad.forEach(obj => {
+					const naamDiv = document.getElementById('tweedegraad');
+					const div = document.createElement('div');
+					div.classList.add('row', 'tweedegraad-div');
+					const imgDiv = document.createElement('div');
+					imgDiv.classList.add('col-4');
+					imgDiv.classList.add('image-div');
+					const imgElement = document.createElement('img');
+					imgElement.src = `img/${obj.afbeelding}`;
+					imgDiv.appendChild(imgElement);
+					div.appendChild(imgDiv);
+					const naamDiv2 = document.createElement('div');
+					naamDiv2.classList.add('col-8');
+					const naamElement = document.createElement('p');
+					naamElement.textContent = obj.naam;
+					naamDiv2.appendChild(naamElement);
+					div.appendChild(naamDiv2);
+					naamDiv.appendChild(div);
+				});
+
+
+				// Output the "naam" values of each object in the derdegraad array
+				derdegraad.forEach(obj => {
+					const naamDiv = document.getElementById('derdegraad');
+					const naamElement = document.createElement('p');
+					naamElement.textContent = obj.naam;
+					naamDiv.appendChild(naamElement);
+				});
+			});
+
+
+		// Step 1
+		const sportwetenschappenDiv = document.querySelector('#tweedegraad div:nth-child(2)');
+		if (sportwetenschappenDiv) {
+			sportwetenschappenDiv.addEventListener('mouseenter', () => {
+				sportwetenschappenDiv.addEventListener('mouseenter', () => {
+					// Step 2
+					console.log("dit werkt")
+					fetch('data.json')
+						.then(response => response.json())
+						.then(data => {
+							// Step 3
+							const doorstroomDiv = document.querySelector(`#${data.tweedegraad.find(obj => obj.naam === 'Sportwetenschappen').doorstroom}`);
+
+							// Step 7
+							doorstroomDiv.classList.add('black');
+						});
+				});
+			});
+		}
+
+
+	</script>
+	<div class="white"></div>
+	<div class="row justify-content-around">
+		<div class="col-4 cl1" id="tweedegraad">
+			<h1>Tweede Graad</h1>
+		</div>
+		<div class="col-4 cl2" id="derdegraad">
+			<h1>Derde Graad</h1>
+		</div>
+	</div>
+</body>
+
+</html>
