@@ -3,12 +3,13 @@
     {
       "naam": "Latijn",
       "afbeelding": "Latijn.png",
-      "doorstroom": "Latijn - Moderne Talen"
+      "doorstroom": "Latijn - Moderne Talen",
+      "doorstroom2": "Latijn - Wiskunde"
     },
     {
       "naam": "Sportwetenschappen",
       "afbeelding": "sportwetenschappen.png",
-      "doorstroom": "Sportwetenschappen2"
+      "doorstroom": "Sportwetenschappen‎"
     },
     {
       "naam": "Natuurwetenschappen",
@@ -16,39 +17,40 @@
       "doorstroom": "Wetenschappen - Wiskunde"
     },
     {
-      "naam": "Economische wetenschappenn",
-      "afbeelding": "economie-moderne-talen.png",
-      "doorstroom": "doorstroom finaliteit"
+      "naam": "Economische wetenschappen",
+      "afbeelding": "Economie - Moderne Talen.png",
+      "doorstroom": "Economie - Moderne Talen",
+      "doorstroom2": "Economie - Wiskunde"
     },
     {
       "naam": "Humane Wetenschappen",
       "afbeelding": "humane-wetenschappen.png",
-      "doorstroom": "doorstroom finaliteit"
+      "doorstroom": "Humane Wetenschappen"
     },
     {
       "naam": "Technologische wetenschappen",
       "afbeelding": "informatica-communicatiewetenschappen.png",
-      "doorstroom": "doorstroom finaliteit"
+      "doorstroom": "Informatica- en Communicatiewetenschappen"
     },
     {
       "naam": "Bedrijf en Organisatie",
       "afbeelding": "applicatie-databeheer.png",
-      "doorstroom": "arbeidsmarkt finaliteit"
+      "doorstroom": "Applicatie- en databeheer"
     },
     {
       "naam": "Sport",
       "afbeelding": "sportbegeleiding.png",
-      "doorstroom": "arbeidsmarkt finaliteit"
+      "doorstroom": "Sportbegeleiding"
     },
     {
       "naam": "Maatschappij en welzijn",
       "afbeelding": "gezondheidszorg.png",
-      "doorstroom": "doorstroom finaliteit"
+      "doorstroom": "Gezondheidszorg"
     },
     {
       "naam": "Zorg en welzijn",
       "afbeelding": "basiszorg-ondersteuning.png",
-      "doorstroom": "arbeidsmarkt finaliteit"
+      "doorstroom": "Basiszorg en ondersteuning"
     }
   ],
   "derdegraad": [
@@ -63,7 +65,7 @@
       "doorstroom": "doorstroom finaliteit"
     },
     {
-      "naam": "Sportwetenschappen2",
+      "naam": "Sportwetenschappen‎",
       "afbeelding": "sportwetenschappen.png",
       "doorstroom": "doorstroom finaliteit"
     },
