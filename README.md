@@ -65,7 +65,7 @@ Wat we zoal door dit project hebben bijgeleerd:
 ### Links
 
 **Website link**
-- https://kyanoboi.github.io/schoolwebsite_emiel_kyano/schoolsite/index.html
+- https://kyanoboi.github.io/schoolwebsite_emiel_kyano/website/index.html
 
 **Bronvermelding**
 - https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
