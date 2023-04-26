@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example HTML Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css"
+    />
+    <style>
+      /* Style for the table */
+      html,
+      body {
+        margin: 0px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 70%;
+        table-layout: fixed;
+        margin-left: 15%;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+      }
+      th {
+        background-color: #cccccc;
+      }
+      td.highlight {
+        background-color: #94d609;
+      }
+      .groen {
+        width: 100%;
+        height: 35px;
+        background-color: #94d609;
+      }
+      .white {
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        padding: 10px;
+      }
+
+      .img-logo {
+        height: 100%;
+      }
+      h1 {
+        text-align: center;
+      }
+      footer {
+        margin-top: 150px;
+        width: 100%;
+        height: 300px;
+        background-color: #94d609;
+        text-align: center;
+      }
+    </style>
+    <script>
+      // Function to fetch the JSON data from the provided file
+      async function fetchData() {
+        const response = await fetch("data.json");
+        const data = await response.json();
+        return data;
+      }
+
+      // Function to create the table rows for the "tweedegraad" and "derdegraad" objects
+      function createRows(data, target) {
+        const table = document.querySelector(target);
+        const rows = data.map((item) => {
+          const row = document.createElement("tr");
+          const cell = document.createElement("td");
+          cell.textContent = item.naam;
+          cell.addEventListener("mouseover", () => {
+            highlightDerdegraad(data, item);
+            cell.classList.add("highlight");
+          });
+          cell.addEventListener("mouseout", () => {
+            highlightDerdegraad(data, item);
+            cell.classList.remove("highlight");
+          });
+          row.appendChild(cell);
+          return row;
+        });
+        table.append(...rows);
+      }
+
+      // Function to highlight the corresponding "doorstroom" value in the "derdegraad" column
+      function highlightDerdegraad(data, tweedegraadItem) {
+        const derdegraadTable = document.querySelector("#derdegraad");
+        derdegraadTable.querySelectorAll("td").forEach((cell) => {
+          cell.classList.remove("highlight");
+          if (cell.textContent === tweedegraadItem.doorstroom) {
+            cell.classList.add("highlight");
+          }
+          if (cell.textContent === tweedegraadItem.doorstroom2) {
+            cell.classList.add("highlight");
+          }
+        });
+      }
+
+      // Main function to initialize the page and fetch the data
+      async function init() {
+        const data = await fetchData();
+        createRows(data.tweedegraad, "#tweedegraad");
+        createRows(data.derdegraad, "#derdegraad");
+      }
+
+      // Call the main function when the page has finished loading
+      window.addEventListener("load", init);
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="groen"></div>
+      <div class="white">
+        <img src="img/Logo_Dynamiek_SGR23.png" alt="" class="img-logo" />
+      </div>
+    </header>
+    <h1>Studieaanbod</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Tweedegraads richtingen</th>
+          <th>Derdegraads richtingen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <table id="tweedegraad"></table>
+          </td>
+          <td>
+            <table id="derdegraad"></table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>Gemaakt door: Emiel De Waele & Kyano De Maertelaere (2023)</footer>
+  </body>
+</html>
