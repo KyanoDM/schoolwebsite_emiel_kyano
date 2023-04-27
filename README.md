@@ -52,15 +52,9 @@ Pellentesque a volutpat metus, et volutpat nunc. Donec convallis, turpis iaculis
 
 Wat we zoal door dit project hebben bijgeleerd:
 
-- vb 1
-- vb 2
-- vb 3
-
-### Toevoegingen
-
-- vb1
-- vb2
-- vb3
+- Leren werken met json
+- json file inlezen met javascript, en daarna op een html page plaatsen
+- tabbelen maken met javascript
 
 ### Links
 
