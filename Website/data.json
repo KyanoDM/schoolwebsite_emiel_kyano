@@ -1,0 +1,96 @@
+{
+  "tweedegraad": [
+    {
+      "naam": "Latijn",
+      "doorstroom": "Latijn - Moderne Talen",
+      "doorstroom2": "Latijn - Wiskunde"
+    },
+    {
+      "naam": "Sportwetenschappen",
+      "doorstroom": "Sportwetenschappen‎"
+    },
+    {
+      "naam": "Natuurwetenschappen",
+      "doorstroom": "Wetenschappen - Wiskunde"
+    },
+    {
+      "naam": "Economische wetenschappen",
+      "doorstroom": "Economie - Moderne Talen",
+      "doorstroom2": "Economie - Wiskunde"
+    },
+    {
+      "naam": "Humane Wetenschappen",
+      "doorstroom": "Humane Wetenschappen"
+    },
+    {
+      "naam": "Technologische wetenschappen",
+      "doorstroom": "Informatica- en Communicatiewetenschappen"
+    },
+    {
+      "naam": "Bedrijf en Organisatie",
+      "doorstroom": "Applicatie- en databeheer"
+    },
+    {
+      "naam": "Sport",
+      "doorstroom": "Sportbegeleiding"
+    },
+    {
+      "naam": "Maatschappij en welzijn",
+      "doorstroom": "Gezondheidszorg"
+    },
+    {
+      "naam": "Zorg en welzijn",
+      "doorstroom": "Basiszorg en ondersteuning"
+    }
+  ],
+  "derdegraad": [
+    {
+      "naam": "Latijn - Moderne Talen",
+      "doorstroom": "test"
+    },
+    {
+      "naam": "Latijn - Wiskunde",
+      "doorstroom": "doorstroom finaliteit"
+    },
+    {
+      "naam": "Sportwetenschappen‎",
+      "doorstroom": "doorstroom finaliteit"
+    },
+    {
+      "naam": "Wetenschappen - Wiskunde",
+      "doorstroom": "doorstroom finaliteit"
+    },
+    {
+      "naam": "Economie - Moderne Talen",
+      "doorstroom": "doorstroom finaliteit"
+    },
+    {
+      "naam": "Economie - Wiskunde",
+      "doorstroom": "doorstroom finaliteit"
+    },
+    {
+      "naam": "Humane Wetenschappen",
+      "doorstroom": "doorstroom finaliteit"
+    },
+    {
+      "naam": "Informatica- en Communicatiewetenschappen",
+      "doorstroom": "doorstroom finaliteit"
+    },
+    {
+      "naam": "Applicatie- en databeheer",
+      "doorstroom": "arbeidsmarkt finaliteit"
+    },
+    {
+      "naam": "Sportbegeleiding",
+      "doorstroom": "arbeidsmarkt finaliteit"
+    },
+    {
+      "naam": "Gezondheidszorg",
+      "doorstroom": "doorstroom finaliteit"
+    },
+    {
+      "naam": "Basiszorg en ondersteuning",
+      "doorstroom": "arbeidsmarkt finaliteit"
+    }
+  ]
+}
